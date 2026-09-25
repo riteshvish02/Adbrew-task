@@ -20,6 +20,7 @@ services:
       - "3000:3000"
     volumes:
       - ${ADBREW_CODEBASE_PATH}:/src
+      - /src/app/node_modules
 
   mongo:
     build: .
